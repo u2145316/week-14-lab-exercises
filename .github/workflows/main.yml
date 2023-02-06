@@ -1,0 +1,10 @@
+name: Github test
+run-name: $[{ github.actor}] 
+on: [push]
+jobs:
+  Explore-Github-Actions:
+  runs-on: ubuntu-latest
+  steps:
+    - run: npm audit
+    - run: npm lint
+    - run: echo "test" 
