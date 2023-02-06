@@ -8,9 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: ls ${{ github.workspace }}
-      - run: ls ${{ github.workspace }}; cd ${{ github.workspace }}/../ ; pwd 
       - run: echo "test" 
-      - run: ls ${{ github.workspace }}/../
       - run: npm audit ${{ github.workspace }}/insecure
       - run: npm run lint ${{ github.workspace }}/insecure
       
