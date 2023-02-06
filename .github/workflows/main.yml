@@ -11,6 +11,6 @@ jobs:
       - run: ls ${{ github.workspace }}; cd ${{ github.workspace }}/../ ; pwd 
       - run: echo "test" 
       - run: ls ${{ github.workspace }}/../
-      - run: npm audit ${{ github.workspace }/insecure
+      - run: npm audit ${{ github.workspace }}/insecure
       - run: npm run lint ${{ github.workspace }}/insecure
       
