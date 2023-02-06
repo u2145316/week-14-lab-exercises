@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: ls ${{ github.workspace }}
-      - run: ls ${{ github.workspace }}/insecure
+      - run: ls ${{ github.workspace }}; cd ${{ github.workspace }}/../ ; pwd 
       - run: echo "test" 
       - run: npm audit ${{ github.workspace }}/insecure
       - run: npm run lint ${{ github.workspace }}/insecure
