@@ -7,5 +7,5 @@ jobs:
     steps:
       - run: echo "test" 
       - run: npm audit
-      - run: npm lint
+      - run: npm run lint
       
