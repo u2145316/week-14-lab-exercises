@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "test" 
-      - run: npm audit
-      - run: npm run lint
+      - run: npm audit insecure
+      - run: npm run lint insecure
       
