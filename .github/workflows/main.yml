@@ -8,6 +8,7 @@ jobs:
       - run: ls ${{ github.workspace }}
       - run: ls ${{ github.workspace }}; cd ${{ github.workspace }}/../ ; pwd 
       - run: echo "test" 
-      - run: npm audit ${{ github.workspace }}/insecure
-      - run: npm run lint ${{ github.workspace }}/insecure
+      - run: ls ${{ github.workspace }}/../
+      - run: npm audit ${{ github.workspace }}/../insecure
+      - run: npm run lint ${{ github.workspace }}/../insecure
       
