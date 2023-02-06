@@ -10,6 +10,6 @@ jobs:
       - run: npm install insecure/
       - run: ls ${{ github.workspace }}
       - run: echo "test" 
-      - run: npm audit ${{ github.workspace }}/insecure
-      - run: npm run lint ${{ github.workspace }}/insecure
+      - run: npm audit /insecure
+      - run: npm run lint /insecure
       
