@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: npm install insecure/
+      - run: npm install 
       - run: ls ${{ github.workspace }}
       - run: echo "test" 
       - run: npm audit insecure/
-      - run: npm run lint insecure/
+      - run: npm run lint mashed/
       
