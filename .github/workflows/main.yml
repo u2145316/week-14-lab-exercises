@@ -5,6 +5,7 @@ jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "test" 
       - run: npm audit
       - run: npm lint
-      - run: echo "test" 
+      
